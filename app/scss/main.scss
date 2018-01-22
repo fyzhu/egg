@@ -1,3 +1,102 @@
-a{
+$color: #fbf928;
+
+//通用样式
+body{
     font-family: microsoft yahei;
+}
+
+// 登录页 login.html
+
+.login-box {
+    font-family: '黑体';
+    /*padding: 0 40px;*/
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.login-box form {
+    height: 100%;
+}
+
+.login-box .logo {
+    position: absolute;
+    top: 16%;
+    width: 100%;
+}
+
+.login-box .logo img {
+    width: 100px;
+}
+
+.login-box .input {
+    width: 100%;
+    position: absolute;
+    top: 24%;
+}
+
+.login-box .input div {
+    padding: 0 40px;
+}
+
+.login-box .input div input {
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+.login-box .input .mobile {
+    position: relative;
+}
+
+.login-box .input .mobile input {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    text-indent: 15px;
+    font-size: 15px;
+    color: #23232b;
+}
+
+.login-box .input .mobile a {
+    position: absolute;
+    right: 49px;
+    top: 7.5px;
+    color: $color;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding: 4px 9px;
+    border: 1px solid $color;
+    border-radius: 5px;
+}
+
+.login-box .input .code input {
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    text-indent: 15px;
+    font-size: 15px;
+    color: #23232b;
+    margin-top: 10px;
+}
+
+.login-box .input .login input {
+    color: #fff;
+    border: 1px solid $color;
+    background: $color;
+    margin-top: 35px;
+    font-size: 15px;
+}
+.login-box .tips{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  width: 139px;
+  height: 43px;
+  line-height: 43px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.8);
+  transform: translateX(-50%) translateY(-50%);
 }
