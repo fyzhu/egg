@@ -1,10 +1,28 @@
 $color: #fbf928;
+$fontcolor: #3c3c3a;
 
 //通用样式
-body{
-    font-family: microsoft yahei;
+html {
+    height: 100%;
 }
 
+body {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    font-family: microsoft yahei;
+    line-height: 1;
+    color: $fontcolor;
+}
+a{
+    text-decoration: none;
+    color: $fontcolor
+}
+ul,li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
 // 登录页 login.html
 
 .login-box {
@@ -26,7 +44,7 @@ body{
 }
 
 .login-box .logo img {
-    width: 100px;
+    width: 165px;
 }
 
 .login-box .input {
@@ -41,8 +59,10 @@ body{
 
 .login-box .input div input {
     width: 100%;
-    height: 38px;
+    height: 40px;
     box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1px solid #f1f1f1;
 }
 
 .login-box .input .mobile {
@@ -50,7 +70,7 @@ body{
 }
 
 .login-box .input .mobile input {
-    border: 1px solid #cacaca;
+    // border: 1px solid #cacaca;
     border-radius: 4px;
     text-indent: 15px;
     font-size: 15px;
@@ -61,30 +81,33 @@ body{
     position: absolute;
     right: 49px;
     top: 7.5px;
-    color: $color;
+    color: #2f2f25;
     font-size: 15px;
     text-decoration: none;
     display: block;
     padding: 4px 9px;
-    border: 1px solid $color;
+    // border: 1px solid $color;
     border-radius: 5px;
+    background-color: $color;
 }
 
 .login-box .input .code input {
-    border: 1px solid #cacaca;
+    // border: 1px solid #cacaca;
     border-radius: 4px;
     text-indent: 15px;
     font-size: 15px;
     color: #23232b;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .login-box .input .login input {
-    color: #fff;
+    color: $fontcolor;
     border: 1px solid $color;
     background: $color;
-    margin-top: 35px;
-    font-size: 15px;
+    margin-top: 20px;
+    font-size: 17px;
+    height: 45px;
+    line-height: 45px;;
 }
 .login-box .tips{
   color: #fff;
@@ -99,4 +122,116 @@ body{
   border-radius: 5px;
   background: rgba(0,0,0,0.8);
   transform: translateX(-50%) translateY(-50%);
+}
+
+// 我的收入 my-income.html
+
+.my-income{
+    height: 100%;
+    background: #f0f0f0;
+    .up{
+        .top{
+            background: $color;
+            text-align: center;
+            height: 172px;
+            .num{
+                font-size: 30px;
+                font-weight: bold;
+                color: $fontcolor;
+                padding-top: 41px;
+                span{
+                    font-size: 15px;
+                }
+            }
+            >span{
+                font-size: 11px;
+                margin-top: 14px;
+                display: block;
+            }
+            .top-btn{
+                display: flex;
+                justify-content: space-around;
+                a{
+                    display: block;
+                    width: 102px;
+                    height: 25px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid $fontcolor;
+                    border-radius: 4px;
+                    font-size: 13px;
+                    margin-top: 35px;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+            height: 49px;
+
+            span{
+                display: block;
+                text-align: center
+            }
+            span:first-child{
+                margin-top: 9px;
+                font-size: 11px;
+            }
+            span:nth-child(2){
+                color: #ff3700;
+                font-size: 17px;
+                margin-top: 8px;
+            }
+        }
+    }
+    .middle{
+        background: #fff;
+        margin: 10px 0;
+        li{
+            padding: 0 15px;
+            height: 49px;
+            line-height: 49px;
+            border-bottom: 1px solid #e6dfdf;
+            display: flex;
+            justify-content: space-between;
+            span:first-child{
+                color: #98918e;
+                font-size: 15px;
+            }
+            span:last-child{
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        height: 84px;
+        a{
+            width: 50%;
+            text-align: center;
+            display: block;
+            padding-top: 53px;
+            font-size: 12px;
+            color: #2f2723;
+            
+        }
+         :first-child {
+            background-image: url(../images/btn1.png);
+            background-position: center 15px;
+            background-repeat: no-repeat;
+            background-size: 23px;
+
+        }
+
+         :last-child {
+            background-image: url(../images/btn2.png);
+            background-position: center 15px;
+            background-repeat: no-repeat;
+            background-size: 23px;
+        }
+    }
 }
