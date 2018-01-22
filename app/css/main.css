@@ -187,3 +187,31 @@ ul, li {
       background-position: center 15px;
       background-repeat: no-repeat;
       background-size: 23px; }
+
+.income-detail {
+  height: 100%;
+  background: #f0f0f0; }
+  .income-detail li {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 12px;
+    border-bottom: 1px solid #e7e2e2; }
+    .income-detail li span {
+      display: block; }
+    .income-detail li span:first-child {
+      color: #2f2723;
+      font-size: 15px; }
+    .income-detail li span:last-child {
+      font-size: 11px;
+      color: #98918e;
+      margin-top: 8px; }
+    .income-detail li div:last-child {
+      color: #2f2723;
+      font-weight: bold;
+      font-style: 15px; }
+  .income-detail > div {
+    text-align: center;
+    margin-top: 19px;
+    font-size: 12px;
+    color: #98918e; }
