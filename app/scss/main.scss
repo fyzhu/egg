@@ -237,8 +237,9 @@ ul,li{
 }
 
 // 收入详情 income-detail.html
+// 提现记录 .withdraw-record.html
 
-.income-detail{
+.income-detail,.withdraw-record{
     height: 100%;
     background: #f0f0f0;
     li{
@@ -271,4 +272,11 @@ ul,li{
         font-size: 12px;
         color: #98918e;
     }
+}
+
+.withdraw-record{
+    ul
+        li{
+            border-bottom: 0;
+        }
 }

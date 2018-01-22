@@ -188,30 +188,34 @@ ul, li {
       background-repeat: no-repeat;
       background-size: 23px; }
 
-.income-detail {
+.income-detail, .withdraw-record {
   height: 100%;
   background: #f0f0f0; }
-  .income-detail li {
+  .income-detail li, .withdraw-record li {
     background: #fff;
     display: flex;
     justify-content: space-between;
     padding: 13px 12px;
     border-bottom: 1px solid #e7e2e2; }
-    .income-detail li span {
+    .income-detail li span, .withdraw-record li span {
       display: block; }
-    .income-detail li span:first-child {
+    .income-detail li span:first-child, .withdraw-record li span:first-child {
       color: #2f2723;
       font-size: 15px; }
-    .income-detail li span:last-child {
+    .income-detail li span:last-child, .withdraw-record li span:last-child {
       font-size: 11px;
       color: #98918e;
       margin-top: 8px; }
-    .income-detail li div:last-child {
+    .income-detail li div:last-child, .withdraw-record li div:last-child {
       color: #2f2723;
       font-weight: bold;
       font-style: 15px; }
-  .income-detail > div {
+  .income-detail > div, .withdraw-record > div {
     text-align: center;
     margin-top: 19px;
     font-size: 12px;
     color: #98918e; }
+
+.withdraw-record ul
+li {
+  border-bottom: 0; }
