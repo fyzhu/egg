@@ -17,7 +17,7 @@ gulp.task('serve', ['sass'], function () {
 // scss编译后的css将注入到浏览器里实现更新
 gulp.task('sass', function () {
     return gulp.src("app/scss/*.scss")
-        .pipe($.plumber())
+        // .pipe($.plumber())
         .pipe(sass())
         .pipe(gulp.dest("app/css"))
         .pipe(reload({ stream: true }));
