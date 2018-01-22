@@ -316,3 +316,43 @@ ul,li{
         }
     }
 }
+
+// 我要报修 apply-repair.html
+
+.apply-repair{
+    height: 100%;
+    background: #f0f0f0f0;
+    label{
+        text-indent: 15px;
+        padding-top: 12px;
+        margin-bottom: 7px;
+        display: block;
+        font-size: 13px;
+        color: #2f2f25;
+    }
+    textarea{
+        width: 100%;
+        border:none;
+        padding: 11px 14px;
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    .tips{
+        font-size: 10px;
+        line-height: 20px;
+        color: #bdbdbd;
+        padding: 5px 10px 5px;
+    }
+    a{
+        margin-top: 4px;
+        background: $color;
+        display: block;
+        text-align: center;
+        height: 36px;
+        line-height: 36px;
+        margin: 0 8px;
+        font-size: 15px;
+        color: #2f2f25;
+        border-radius: 4px;
+    }
+}
