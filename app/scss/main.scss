@@ -280,3 +280,39 @@ ul,li{
             border-bottom: 0;
         }
 }
+
+// 设备状态 machine-status.html
+
+.machine-status{
+    height: 100%;
+    background: #f0f0f0;
+    .machine-list{
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 0 14px;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0 11px;
+            color: #2f2723;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            .off{
+                color: #ff6636;
+            }
+        }
+        .content{
+            padding: 5px 0;
+            li{
+                display: flex;
+                justify-content: space-between;
+                padding: 7px 0;
+                color: #2f2723;
+                font-size: 12px;
+                span:last-child{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

@@ -219,3 +219,30 @@ ul, li {
 .withdraw-record ul
 li {
   border-bottom: 0; }
+
+.machine-status {
+  height: 100%;
+  background: #f0f0f0; }
+  .machine-status .machine-list {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 0 14px; }
+    .machine-status .machine-list .title {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0 11px;
+      color: #2f2723;
+      font-size: 15px;
+      border-bottom: 1px solid #e5e5e5; }
+      .machine-status .machine-list .title .off {
+        color: #ff6636; }
+    .machine-status .machine-list .content {
+      padding: 5px 0; }
+      .machine-status .machine-list .content li {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 0;
+        color: #2f2723;
+        font-size: 12px; }
+        .machine-status .machine-list .content li span:last-child {
+          font-size: 13px; }
