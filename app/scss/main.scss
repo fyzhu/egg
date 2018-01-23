@@ -23,6 +23,21 @@ ul,li{
     margin:0;
     padding: 0;
 }
+//错误提示样式
+ .notice {
+     color: #fff;
+     font-size: 12px;
+     text-align: center;
+     width: 187px;
+     height: 45px;
+     line-height: 45px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     border-radius: 5px;
+     background: rgba(0, 0, 0, 0.8);
+     transform: translateX(-50%) translateY(-50%);
+ }
 // 登录页 login.html
 
 .login-box {
@@ -50,7 +65,7 @@ ul,li{
 .login-box .input {
     width: 100%;
     position: absolute;
-    top: 24%;
+    top: 42%;
 }
 
 .login-box .input div {
@@ -109,20 +124,7 @@ ul,li{
     height: 45px;
     line-height: 45px;;
 }
-.login-box .tips{
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  width: 139px;
-  height: 43px;
-  line-height: 43px;
-  position: absolute;
-  left:50%;
-  top:50%;
-  border-radius: 5px;
-  background: rgba(0,0,0,0.8);
-  transform: translateX(-50%) translateY(-50%);
-}
+
 
 // 我的收入 my-income.html
 
@@ -242,6 +244,9 @@ ul,li{
 .income-detail,.withdraw-record{
     height: 100%;
     background: #f0f0f0;
+    ul{
+        min-height: 23px;
+    }
     li{
         background: #fff;
         display: flex;
@@ -268,7 +273,7 @@ ul,li{
     }
     >div{
         text-align: center;
-        margin-top: 19px;
+        padding-top: 19px;
         font-size: 12px;
         color: #98918e;
     }
@@ -314,6 +319,12 @@ ul,li{
                 }
             }
         }
+    }
+    >div {
+        text-align: center;
+        padding-top: 42px;
+        font-size: 12px;
+        color: #98918e;
     }
 }
 
