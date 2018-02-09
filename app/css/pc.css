@@ -12,15 +12,26 @@ ul {
   height: 900px;
   margin: 0 auto;
   position: relative; }
-  .header::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 96px;
-    background: url(../images/logo2.png) center no-repeat;
-    margin-top: 48px;
-    position: absolute;
-    z-index: 100; }
+  .header .top {
+    display: flex;
+    justify-content: space-between; }
+    .header .top .logo {
+      width: 127px;
+      height: 50px;
+      background: url(../images/logo2.png) center no-repeat; }
+    .header .top .nav {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 210px; }
+      .header .top .nav li {
+        width: 84px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 14px;
+        font-family: microsoft yahei; }
+        .header .top .nav li a {
+          text-decoration: none;
+          color: #201f1a; }
   .header img {
     width: 1920px;
     position: absolute;
