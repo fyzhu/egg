@@ -441,8 +441,8 @@ a{
                 display: flex;
                 justify-content: space-between;
                 li{
-                    width: 300px;
-                    ;
+                    position:relative;
+                    width: 300px;                    
                     .pic{
                         text-align: center;
                         height: 166px;
@@ -460,6 +460,24 @@ a{
                         color: #2a2525;
                         padding-left: 40px;
                         margin-top: 13px;
+                    }
+                }
+                li:nth-child(3){
+                    &::before{
+                        content: "多场景爆品";
+                        width: 51px;
+                        height: 52px;
+                        padding: 6px 0px;
+                        border-radius: 4px;
+                        background: #ff6636;
+                        color: #fff;
+                        display: block;
+                        text-align: center;
+                        line-height: 26px;
+                        font-size: 14px;
+                        position: absolute;
+                        left:28px;
+                        top:2px;
                     }
                 }
             }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   overflow-x: hidden;
   line-height: 1; }
@@ -348,6 +349,7 @@ a {
         display: flex;
         justify-content: space-between; }
         .pcindex3 .content .f1 ul li {
+          position: relative;
           width: 300px; }
           .pcindex3 .content .f1 ul li .pic {
             text-align: center;
@@ -364,6 +366,21 @@ a {
             color: #2a2525;
             padding-left: 40px;
             margin-top: 13px; }
+        .pcindex3 .content .f1 ul li:nth-child(3)::before {
+          content: "多场景爆品";
+          width: 51px;
+          height: 52px;
+          padding: 6px 0px;
+          border-radius: 4px;
+          background: #ff6636;
+          color: #fff;
+          display: block;
+          text-align: center;
+          line-height: 26px;
+          font-size: 14px;
+          position: absolute;
+          left: 28px;
+          top: 2px; }
     .pcindex3 .content .f2 {
       display: flex;
       justify-content: space-between; }
