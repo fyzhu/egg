@@ -7,6 +7,11 @@ ul{
     padding: 0;
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+    
+}
 .pcindex{
 .header{
     width: 1200px;
@@ -343,6 +348,7 @@ ul{
 
 // pcindex3.html
 .pcindex3 {
+    background: #f9f9f9;
     .header {
         width: 1200px;        
         height: 453px;
@@ -386,12 +392,195 @@ ul{
                 }
             }
         }
-        img {
+        .superslide {
             width: 1920px;
             position: absolute;
             left: -360px;
-            top: 0;
-            z-index: -1;
+            top: 50px;
+            // z-index: -1;
+            .hd{                
+                position: absolute;
+                bottom: 21px;
+                text-align: center;
+                width: 100%;
+                z-index: 999;
+                li{
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border:1px solid #ff6636;
+                    border-radius: 50%;
+                    background: #fff;
+                    cursor: pointer;
+                    margin:0 4px;
+                    &.on{
+                        background: #ff6636;
+                    }
+                }
+            }
+        }
+    }
+    .content{
+        width: 1200px;
+        margin:0 auto;
+        .section{
+            background: #fff;
+            padding-top: 27px;
+            margin-bottom: 14px;
+        }
+        .catname{
+            font-size: 26px;
+            border-left: 6px solid #ff6636;
+            padding-left: 9px;
+            margin-left: 20px;
+        }
+
+        .f1{
+            padding-bottom: 55px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    width: 300px;
+                    ;
+                    .pic{
+                        text-align: center;
+                        height: 166px;
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                    }
+                    .title{
+                        font-size: 20px;
+                        color: #2a2525;
+                        text-indent: 40px;
+                    }
+                    .desc{
+                        font-size: 16px;
+                        color: #2a2525;
+                        padding-left: 40px;
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+        .f2{
+            display: flex;
+            justify-content: space-between;
+            .section{
+                width: 594px;
+                padding-bottom: 35px;
+            }
+            .left{
+                .textbox{
+                    padding-top: 40px;                    
+                    color: #19191b;
+                    font-size: 16px;
+                    position: relative;
+                    .next{
+                        position: absolute;
+                        right: 35px;
+                        top: -27px;
+                        width: 75px;
+                        height: 27px;
+                        line-height: 27px;
+                        text-align: center;
+                        color: #fff;
+                        background: #ff6636;
+                        border-radius:15px;
+                    }
+                    li{
+                        height: 40px;
+                        line-height: 40px;
+                        padding-left: 30px;
+                        // cursor: pointer;
+                        &:hover::before{
+                            background:#ff6636;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #19191b;
+                        }
+                        a:hover{
+                            color: #ff6636;
+                        }
+                        &::before{
+                            content: "";
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: #3e3a2b;
+                            display: inline-block;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+            }
+            .right{
+                ul{
+                    display: flex;
+                    text-align: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    li{
+                        width: 33.3%;
+                        height: 230px;
+                        margin-top: 30px;
+                    }
+                    li+li{
+                        background: url(../images/line.png)left center no-repeat;
+                    }
+                    .title{
+                        font-size: 16.5px;
+                        color: #ff6636;
+                        margin-top: 90px;
+                    }
+                    .desc{
+                        font-size: 19.5px;
+                        color: #222019;
+                        margin-top: 14px;
+                    }
+                }
+                
+            }
+
+        }
+        .f3{
+            .desc{
+                padding: 32px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #19191b;
+                span{
+                    font-size: 18px;
+                    padding: 15px 0;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 1200px;
+        margin:0 auto;
+        text-align: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-top: 64px;
+            margin-bottom: 50px;
+            li{
+                margin:0 20px;
+                font-size: 20px;
+                color: #2a2525;
+                .title{
+                    margin-top:10px;
+                }                
+            }
+        }
+        .copyright{
+            color: #2a2525;
+            font-size: 14px;
+            padding-bottom: 38px;
         }
     }
 }

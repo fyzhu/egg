@@ -7,6 +7,10 @@ ul {
   padding: 0;
   list-style: none; }
 
+a {
+  text-decoration: none;
+  color: #fff; }
+
 .pcindex .header {
   width: 1200px;
   height: 900px;
@@ -267,44 +271,184 @@ ul {
     color: #7d7c79;
     font-size: 12px; }
 
-.pcindex3 .header {
-  width: 1200px;
-  height: 453px;
-  padding-bottom: 45px;
-  margin: 0 auto;
-  position: relative; }
-  .pcindex3 .header .top {
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    width: 100%;
-    padding: 0 360px;
-    position: absolute;
-    left: -360px; }
-    .pcindex3 .header .top .logo {
-      width: 127px;
-      height: 50px;
-      background: url(../images/logo3.png) center no-repeat; }
-    .pcindex3 .header .top .nav {
+.pcindex3 {
+  background: #f9f9f9; }
+  .pcindex3 .header {
+    width: 1200px;
+    height: 453px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+    position: relative; }
+    .pcindex3 .header .top {
       display: flex;
       justify-content: space-between;
-      margin-right: 210px; }
-      .pcindex3 .header .top .nav li {
-        width: 84px;
+      background: #fff;
+      width: 100%;
+      padding: 0 360px;
+      position: absolute;
+      left: -360px; }
+      .pcindex3 .header .top .logo {
+        width: 127px;
+        height: 50px;
+        background: url(../images/logo3.png) center no-repeat; }
+      .pcindex3 .header .top .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 210px; }
+        .pcindex3 .header .top .nav li {
+          width: 84px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 14px;
+          font-family: microsoft yahei; }
+          .pcindex3 .header .top .nav li a {
+            text-decoration: none;
+            color: #201f1a; }
+          .pcindex3 .header .top .nav li.on {
+            background: #ff6636; }
+            .pcindex3 .header .top .nav li.on a {
+              color: #fff; }
+    .pcindex3 .header .superslide {
+      width: 1920px;
+      position: absolute;
+      left: -360px;
+      top: 50px; }
+      .pcindex3 .header .superslide .hd {
+        position: absolute;
+        bottom: 21px;
         text-align: center;
-        line-height: 50px;
-        font-size: 14px;
-        font-family: microsoft yahei; }
-        .pcindex3 .header .top .nav li a {
-          text-decoration: none;
-          color: #201f1a; }
-        .pcindex3 .header .top .nav li.on {
-          background: #ff6636; }
-          .pcindex3 .header .top .nav li.on a {
-            color: #fff; }
-  .pcindex3 .header img {
-    width: 1920px;
-    position: absolute;
-    left: -360px;
-    top: 0;
-    z-index: -1; }
+        width: 100%;
+        z-index: 999; }
+        .pcindex3 .header .superslide .hd li {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #ff6636;
+          border-radius: 50%;
+          background: #fff;
+          cursor: pointer;
+          margin: 0 4px; }
+          .pcindex3 .header .superslide .hd li.on {
+            background: #ff6636; }
+  .pcindex3 .content {
+    width: 1200px;
+    margin: 0 auto; }
+    .pcindex3 .content .section {
+      background: #fff;
+      padding-top: 27px;
+      margin-bottom: 14px; }
+    .pcindex3 .content .catname {
+      font-size: 26px;
+      border-left: 6px solid #ff6636;
+      padding-left: 9px;
+      margin-left: 20px; }
+    .pcindex3 .content .f1 {
+      padding-bottom: 55px; }
+      .pcindex3 .content .f1 ul {
+        display: flex;
+        justify-content: space-between; }
+        .pcindex3 .content .f1 ul li {
+          width: 300px; }
+          .pcindex3 .content .f1 ul li .pic {
+            text-align: center;
+            height: 166px;
+            justify-content: center;
+            align-items: center;
+            display: flex; }
+          .pcindex3 .content .f1 ul li .title {
+            font-size: 20px;
+            color: #2a2525;
+            text-indent: 40px; }
+          .pcindex3 .content .f1 ul li .desc {
+            font-size: 16px;
+            color: #2a2525;
+            padding-left: 40px;
+            margin-top: 13px; }
+    .pcindex3 .content .f2 {
+      display: flex;
+      justify-content: space-between; }
+      .pcindex3 .content .f2 .section {
+        width: 594px;
+        padding-bottom: 35px; }
+      .pcindex3 .content .f2 .left .textbox {
+        padding-top: 40px;
+        color: #19191b;
+        font-size: 16px;
+        position: relative; }
+        .pcindex3 .content .f2 .left .textbox .next {
+          position: absolute;
+          right: 35px;
+          top: -27px;
+          width: 75px;
+          height: 27px;
+          line-height: 27px;
+          text-align: center;
+          color: #fff;
+          background: #ff6636;
+          border-radius: 15px; }
+        .pcindex3 .content .f2 .left .textbox li {
+          height: 40px;
+          line-height: 40px;
+          padding-left: 30px; }
+          .pcindex3 .content .f2 .left .textbox li:hover::before {
+            background: #ff6636; }
+          .pcindex3 .content .f2 .left .textbox li a {
+            text-decoration: none;
+            color: #19191b; }
+          .pcindex3 .content .f2 .left .textbox li a:hover {
+            color: #ff6636; }
+          .pcindex3 .content .f2 .left .textbox li::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #3e3a2b;
+            display: inline-block;
+            margin-right: 6px; }
+      .pcindex3 .content .f2 .right ul {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center; }
+        .pcindex3 .content .f2 .right ul li {
+          width: 33.3%;
+          height: 230px;
+          margin-top: 30px; }
+        .pcindex3 .content .f2 .right ul li + li {
+          background: url(../images/line.png) left center no-repeat; }
+        .pcindex3 .content .f2 .right ul .title {
+          font-size: 16.5px;
+          color: #ff6636;
+          margin-top: 90px; }
+        .pcindex3 .content .f2 .right ul .desc {
+          font-size: 19.5px;
+          color: #222019;
+          margin-top: 14px; }
+    .pcindex3 .content .f3 .desc {
+      padding: 32px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #19191b; }
+      .pcindex3 .content .f3 .desc span {
+        font-size: 18px;
+        padding: 15px 0;
+        display: inline-block; }
+  .pcindex3 .footer {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+    .pcindex3 .footer ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 64px;
+      margin-bottom: 50px; }
+      .pcindex3 .footer ul li {
+        margin: 0 20px;
+        font-size: 20px;
+        color: #2a2525; }
+        .pcindex3 .footer ul li .title {
+          margin-top: 10px; }
+    .pcindex3 .footer .copyright {
+      color: #2a2525;
+      font-size: 14px;
+      padding-bottom: 38px; }
